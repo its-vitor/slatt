@@ -1,0 +1,20 @@
+@import url(styles/colors.css);
+@import url(styles/elements/header.css);
+@import url(styles/elements/footer.css);
+
+* {
+    font-family: Montserrat;
+}
+
+body {
+    background-color: var(--black);
+    margin: 0;
+}
+
+section {
+    padding: 100px 100px
+}
+
+#introduction img {
+    width: 300px;
+}
