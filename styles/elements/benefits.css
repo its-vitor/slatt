@@ -1,0 +1,25 @@
+@import url(../colors.css);
+
+#benefits {
+    display: flex;
+    padding: 50px 200px;
+    gap: 30px;
+    justify-content: center;
+    background-color: var(--gray);
+}
+
+#benefits div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--black);
+    padding: 20px;
+    width: 200px;
+    border-radius: 20px;
+    color: var(--white);
+}
+
+#benefits div h1 i {
+    font-size: 50px;
+    color: var(--pink);
+}

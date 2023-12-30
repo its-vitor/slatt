@@ -1,20 +1,43 @@
 @import url(styles/colors.css);
 @import url(styles/elements/header.css);
 @import url(styles/elements/footer.css);
+@import url(styles/elements/introduction.css);
+@import url(styles/elements/dropdown.css);
+@import url(styles/elements/menu-mobile.css);
+@import url(styles/elements/about.css);
+@import url(styles/elements/information.css);
+@import url(styles/elements/benefits.css);
+@import url(styles/elements/delivery.css);
 
 * {
-    font-family: Montserrat;
+  font-family: Montserrat;
 }
 
 body {
-    background-color: var(--black);
-    margin: 0;
+  background-color: var(--black);
+  margin: 0;
 }
 
-section {
-    padding: 100px 100px
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--pink) #000000;
+}
+*::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
 }
 
-#introduction img {
-    width: 300px;
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: var(--white);
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--pink);
+}
+
+/* Buttons */
+*::-webkit-scrollbar-button {
+  display: none;
 }

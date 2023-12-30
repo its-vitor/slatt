@@ -1,0 +1,235 @@
+@import url(../colors.css);
+
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  max-width: 1440px;
+  padding: 20px 50px 0;
+  margin: auto;
+
+  color: var(--white);
+}
+
+#about-title {
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 40px;
+  margin: 0;
+}
+
+.game-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.game-card {
+  padding-right: 10px;
+  display: flex;
+  gap: 20px;
+  border-radius: 10px;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--black),
+    var(--black) 0.5%,
+    var(--gray) 0.5%,
+    var(--gray) 1%
+  );
+  overflow-y: hidden;
+  width: calc(100% / 2 - 30px);
+  height: auto;
+  border: 1px solid var(--gray);
+}
+
+.game-card-banner {
+  padding-right: 100px;
+  overflow: hidden;
+}
+
+.game-card-banner img {
+  max-height: 450px;
+  max-width: 150px;
+  height: 450px;
+  width: 150px;
+  object-fit: cover;
+  object-position: -80px;
+  filter: grayscale(100%);
+  transition: all 0.5s ease;
+}
+
+.card-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.game-card-infomation {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 18px;
+
+  margin: 10px;
+}
+
+.game-card-infomation hr {
+  border: none;
+  width: 50%;
+  height: 1px;
+  margin: 0;
+  background: var(--white);
+  transition: all 0.5s ease;
+}
+
+.game-card-infomation h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.game-card-infomation h2 {
+  margin: 0;
+}
+
+#game-card-monetization-coins {
+  color: var(--pink);
+}
+
+.game-card-analythics {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-card-analythics div {
+  flex-direction: column;
+  gap: 0;
+  margin-right: 40px;
+}
+
+.game-card-analythics h1 {
+  font-size: 60px;
+  margin: 0px;
+}
+
+.game-card-analythics p {
+  font-size: 10px;
+  margin: 0px;
+}
+
+.game-card-examples {
+  display: flex;
+  flex-wrap: wrap;
+  bottom: 0;
+}
+
+.game-card-examples img {
+  height: 25px;
+  width: auto;
+
+  margin: 16px 0;
+}
+
+.game-card:hover .game-card-banner img {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+.game-card:hover .game-card-infomation hr {
+  width: 80%;
+  background: var(--pink);
+}
+
+#read-more-button-div {
+  margin: 20px;
+  text-align: center;
+}
+
+#read-more-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #ffffff00;
+  color: var(--white);
+  border: 1px solid var(--white);
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+#read-more-button:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.others-cards {
+  display: none;
+  max-height: 0;
+}
+
+.others-cards.active {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+
+  animation: show 1s ease-in-out forwards;
+
+  margin-bottom: 20px;
+  overflow: scroll hidden;
+}
+
+.others-cards div {
+  animation: fade-in 1.5s ease forwards;
+}
+
+.others-cards-information {
+  min-width: 200px;
+  max-width: 200px;
+  background-color: var(--gray);
+  padding: 50px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.others-cards-information h2 i {
+  font-size: 15px;
+}
+
+.others-cards-banner {
+  background-image: linear-gradient(to right, var(--pink), var(--black));
+  text-align: center;
+  border-radius: 10px;
+}
+
+.others-cards-banner img {
+  width: 100px;
+  height: 50px;
+  object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .game-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .game-card {
+    max-width: 800px;
+    width: auto;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  to {
+    max-height: 1200px;
+  }
+}

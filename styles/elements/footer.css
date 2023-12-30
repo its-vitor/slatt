@@ -1,68 +1,105 @@
 @import url(../colors.css);
 
 footer {
-    color: var(--pink);
-    padding: 25px 100px 25px 100px;
-    background: repeating-linear-gradient(
+  color: var(--pink);
+  padding: 25px 100px;
+  background: repeating-linear-gradient(
     45deg,
     var(--black),
     var(--black) 0.5%,
     var(--gray) 0.5%,
     var(--gray) 1%
-  );    
+  );
 }
 
 #upper-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #logo-and-social-networks {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
-#logo-and-social-networks img#footer-logo {
-    width: 200px;
+#footer-logo {
+  width: 200px;
 }
 
-#logo-and-social-networks div { 
-    display: flex;
-    gap: 25px;
+#logo-and-social-networks div {
+  display: flex;
+  gap: 25px;
 }
 
 #logo-and-social-networks div a {
-    color: var(--white);
+  color: var(--white);
 }
 
 #footer-informations {
-    gap: 100px;
-    display: flex;
+  gap: 100px;
+  display: flex;
 }
 
 #footer-informations div {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #footer-informations div a {
-    text-decoration: none;
-    color: var(--white);
-    margin: 5px 0px;
+  text-decoration: none;
+  color: var(--white);
+  margin: 5px 0px;
 }
 
 #bottom-footer {
-    align-items: center;
+  align-items: center;
 }
 
 #bottom-footer a {
-    text-decoration: none;
-    color: var(--pink);
+  text-decoration: none;
+  color: var(--pink);
 }
 
 #bottom-footer p {
-    color: var(--white);
+  color: var(--white);
+}
+
+@media screen and (max-width: 1000px) {
+  footer {
+    padding: 30px;
+  }
+
+  #upper-footer {
+    flex-direction: column;
+  }
+
+  #footer-informations {
+    justify-content: space-around;
+    width: 90%;
+  }
+
+  #bottom-footer {
+    margin-top: 50px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  #logo-and-social-networks {
+    margin-bottom: 50px;
+  }
+
+  #footer-informations {
+    flex-direction: column;
+    width: 100%;
+    gap: 50px;
+  }
+
+  #footer-informations a {
+    font-size: larger;
+  }
 }

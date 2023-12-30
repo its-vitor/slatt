@@ -1,0 +1,79 @@
+@import url(../colors.css);
+
+#introduction {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1000;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.introduction-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.introduction-title h1 {
+  margin: -10px;
+  color: var(--white);
+  text-transform: uppercase;
+  font-family: "Righteous", sans-serif;
+  -webkit-text-stroke: 1px var(--white);
+  font-size: 5rem;
+  text-shadow: 10px 10px 10px #0000005a;
+  text-align: center;
+}
+
+#introduction-button {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: var(--white);
+  font-size: 20px;
+  background-color: #ffffff00;
+  text-decoration: none;
+  border: 1px solid var(--white);
+  transition: all 0.2s ease;
+}
+
+#introduction-button:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+@media (max-width: 1050px) {
+  .introduction-title h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .introduction-title h1 {
+    font-size: 3rem;
+  }
+
+  #introduction-button {
+    scale: 0.9;
+  }
+}
+
+@media (max-width: 625px) {
+  .introduction-title h1 {
+    font-size: 2rem;
+    line-height: 50px;
+  }
+}
