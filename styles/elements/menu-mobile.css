@@ -95,7 +95,6 @@
     text-align: center;
   }
 
-  [data-drop="menu"]:hover .dropdown,
   [data-drop="menu"].show .dropdown {
     padding: 0;
     max-height: 160px;

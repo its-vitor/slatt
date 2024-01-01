@@ -29,7 +29,6 @@
   z-index: 99;
 }
 
-[data-drop="menu"]:hover .dropdown,
 [data-drop="menu"].show .dropdown {
   max-height: 70px;
   padding: 10px 0;

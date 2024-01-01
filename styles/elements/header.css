@@ -55,12 +55,11 @@ header {
 }
 
 .nav-item:hover .bottom-line,
-.nav-item.show .bottom-line {
+[data-drop="menu"].show .bottom-line {
   width: 100%;
 }
 
-.nav-item:hover #arrow,
-.nav-item.show #arrow {
+[data-drop="menu"].show #arrow {
   transform: rotate(-180deg);
 }
 
