@@ -12,13 +12,6 @@
   color: var(--white);
 }
 
-#about-title {
-  text-transform: uppercase;
-  color: var(--white);
-  font-size: 40px;
-  margin: 0;
-}
-
 .game-cards {
   display: flex;
   gap: 30px;

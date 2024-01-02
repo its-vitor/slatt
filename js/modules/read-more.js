@@ -1,4 +1,4 @@
-export default function readCards() {
+export default function initReadCards() {
   const button = document.querySelector("#read-more-button");
 
   button.addEventListener("click", function () {

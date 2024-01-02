@@ -1,0 +1,48 @@
+@import url(../colors.css);
+
+main.products {
+    margin: 100px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#products-filter {
+    padding: 20px;
+    background-color: var(--gray);
+    border-radius: 10px;
+    color: var(--white);
+    width: 250px;
+    text-align: center;
+}
+
+
+#products-filter-title h1 {
+    background-color: var(--black);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#products-filter-options hr {
+    border: none;
+    width: 80%;
+    height: 1px;
+    background: var(--pink);
+}
+
+.products-filter-option {
+    gap: 5px;
+    background-color: var(--black);
+    border-radius: 10px;
+    padding: 5px;
+    align-items: center;
+}
+
+#products-filter-custom-options {
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.products-filter-options-subtitle p {
+    margin: 0;
+}

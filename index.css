@@ -1,13 +1,16 @@
 @import url(styles/colors.css);
 @import url(styles/elements/header.css);
+@import url(styles/elements/main.css);
 @import url(styles/elements/footer.css);
 @import url(styles/elements/introduction.css);
 @import url(styles/elements/dropdown.css);
 @import url(styles/elements/menu-mobile.css);
 @import url(styles/elements/about.css);
-@import url(styles/elements/information.css);
+/* @import url(styles/elements/information.css); */
 @import url(styles/elements/benefits.css);
 @import url(styles/elements/delivery.css);
+@import url(styles/elements/products.css);
+@import url(styles/elements/filter.css);
 
 * {
   font-family: Montserrat;
@@ -16,6 +19,8 @@
 body {
   background-color: var(--black);
   margin: 0;
+
+  overflow-x: hidden;
 }
 
 * {

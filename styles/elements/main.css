@@ -1,58 +1,6 @@
-@import url(../colors.css);
-
-#introduction {
-  position: relative;
-  width: 100%;
-  height: 75vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.bg-video {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1000;
-  object-fit: cover;
-}
-
-#introduction div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#introduction div div {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-
-#introduction p {
+.section-title {
+  text-transform: uppercase;
   color: var(--white);
-  font-weight: 600;
+  font-size: 40px;
   margin: 0;
-  font-size: 2vh;
-  text-shadow: 5px 5px 5px #00000089;
-}
-
-#introduction h1 {
-  color: var(--white);
-  font-weight: 800;
-  font-size: 10vh;
-  margin: 0;
-  text-shadow: 10px 10px 10px #0000005c;
-}
-
-#introduction a {
-  background-color: var(--white);
-  color: var(--pink);
-  padding: 10px 20px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: 600;
 }
